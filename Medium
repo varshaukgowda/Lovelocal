@@ -1,0 +1,14 @@
+def majority_elements(nums):
+    n = len(nums)
+    threshold = n // 3
+    counts = {}
+    for num in nums:
+        counts[num] = counts.get(num, 0) + 1
+        result = []
+    for num, count in counts.items():
+        if count > threshold:
+            result.append(num)
+    return result
+nums = [3, 2, 3]
+result = majority_elements(nums)
+print(result)
