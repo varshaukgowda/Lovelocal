@@ -1,0 +1,3 @@
+s =  "luffy is still joyboy"
+length_of_last_word = len(s.split()[-1])
+print(length_of_last_word)
